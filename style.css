@@ -1,0 +1,20 @@
+body {
+  background: #f9f9f9;
+  color: #29545e;
+}
+
+.main-heading {
+  color: #d7343b;
+}
+
+.secondary-heading {
+  color: #238388;
+}
+
+.special-heading {
+  color: #e1666c;
+}
+
+section {
+  background: #fff;
+}
