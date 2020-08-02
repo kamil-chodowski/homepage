@@ -7,12 +7,16 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link navigation__link--homepage" href="#"
           >Strona główna</a
         >
@@ -24,7 +28,9 @@
 
     <main>
       <header class="intro" id="top">
-        <h1 class="intro__heading">Kamil Chodowski - Strona domowa</h1>
+        <h1 class="intro__heading">
+          Kamil Chodowski - Strona domowa
+        </h1>
       </header>
 
       <section class="about">
@@ -40,39 +46,119 @@
           repellendus doloremque, laboriosam quis eveniet nobis pariatur, est
           dolorum aperiam sequi repudiandae neque debitis.
         </p>
+        <p class="about__description about__description--js"></p>
       </section>
 
       <section class="notes">
         <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
+        <div class="notes__grid">
+          <article class="week-summary">
+            <h3 class="week-summary__title">Rozpiska WTF</h3>
+            <table class="table">
+              <caption class="table__title">
+                Spis odcinków WTF: Co ten frontend
+              </caption>
+              <thead>
+                <tr>
+                  <th>Lp</th>
+                  <th>Tytuł</th>
+                  <th>Czas trwania</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__row">
+                  <td>1.</td>
+                  <td>Wstęp do kursu + zasady</td>
+                  <td>12:30</td>
+                </tr>
+                <tr class="table__row">
+                  <td>2.</td>
+                  <td>Czym jest frontend?</td>
+                  <td>8:41</td>
+                </tr>
+                <tr class="table__row">
+                  <td>3.</td>
+                  <td>Narzędzia i grupy</td>
+                  <td>11:50</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="week-summary week-summary--special">
+            <h3 class="week-summary__title">Czym jest frontend?</h3>
+            <p class="week-summary__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+              aspernatur accusamus nisi eaque molestiae error atque! Saepe
+              quibusdam, debitis mollitia minima consectetur ut dolor quo dolore
+              modi atque impedit ullam!
+            </p>
+          </article>
 
-        <article class="week-summary">
-          <h3 class="week-summary__title">Czym jest frontend?</h3>
-          <p class="week-summary__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-            aspernatur accusamus nisi eaque molestiae error atque! Saepe
-            quibusdam, debitis mollitia minima consectetur ut dolor quo dolore
-            modi atque impedit ullam!
-          </p>
-        </article>
-
-        <article class="week-summary week-summary--special">
-          <h3 class="week-summary__title">Warstwy strony internetowej</h3>
-          <p class="week-summary__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            laboriosam assumenda, magni sunt odit sapiente quaerat tenetur ea,
-            debitis placeat aliquam natus quos, delectus inventore. Tenetur,
-            reprehenderit hic? Et, praesentium.
-          </p>
-        </article>
-        <article class="week-summary">
-          <h3 class="week-summary__title">Magia programowania</h3>
-          <p class="week-summary__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            laboriosam assumenda, magni sunt odit sapiente quaerat tenetur ea,
-            debitis placeat aliquam natus quos, delectus inventore. Tenetur,
-            reprehenderit hic? Et, praesentium.
-          </p>
-        </article>
+          <article class="week-summary">
+            <h3 class="week-summary__title">Warstwy strony internetowej</h3>
+            <p class="week-summary__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              laboriosam assumenda, magni sunt odit sapiente quaerat tenetur ea,
+              debitis placeat aliquam natus quos, delectus inventore. Tenetur,
+              reprehenderit hic? Et, praesentium.
+            </p>
+          </article>
+          <article class="week-summary">
+            <h3 class="week-summary__title">Magia programowania</h3>
+            <p class="week-summary__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              laboriosam assumenda, magni sunt odit sapiente quaerat tenetur ea,
+              debitis placeat aliquam natus quos, delectus inventore. Tenetur,
+              reprehenderit hic? Et, praesentium.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="contact">
+        <h2 class="contact__heading">Napisz do mnie</h2>
+        <div class="contact__form">
+          <form action="" class="form">
+            <p>
+              <input
+                class="form__item"
+                type="text"
+                name="fullName"
+                id="fullName"
+                required
+                placeholder="Full Name"
+              />
+            </p>
+            <p>
+              <input
+                class="form__item"
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email"
+              />
+            </p>
+            <p>
+              <textarea
+                class="form__item form__item-textarea"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+                placeholder="Your Message"
+              ></textarea>
+            </p>
+            <p>
+              <input
+                type="submit"
+                value="Wyślij email"
+                name="send"
+                class="form__item--button"
+              />
+            </p>
+          </form>
+        </div>
       </section>
     </main>
 
